@@ -11,4 +11,93 @@
 body {
   font: 1.5rem "Nunito", sans-serif;
   min-height: 100vh;
+  background-color: bisque;
+  background-image: radial-gradient(bisque, #fff);
+  display: flex;
+  flex-direction: column;
+}
+
+header, nav, main, footer {
+  display: grid;
+  grid-template-columns: 100%;
+  place-content: center;
+  text-align: center;
+}
+
+header, footer {
+  position: sticky;
+  background-color: bisque;
+}
+
+header {
+  top:0
+}
+
+nav {
+  background-color: bisque;
+  border-bottom: 2px solid black;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer{
+  bottom: 0;
+}
+
+/* || MEDIA QUERY SMALL || */
+
+@media screen and (min-width: 576px) {
+  body {
+    background-color: aquamarine;
+    background-image: radial-gradient(aquamarine, #fff);
+  }
+  nav {
+    display: none;
+  }
+}
+/* || MEDIA QUERY MEDIUM || */
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(161, 127, 255);
+    background-image: radial-gradient( rgb(161, 127, 255), #fff);
+  }
+  nav {
+    display: none;
+  }
+}
+/* || MEDIA QUERY LARGE || */
+
+@media screen and (min-width: 992px) {
+  body {
+    background-color: rgb(255, 246, 127);
+    background-image: radial-gradient( rgb(255, 246, 127), #fff);
+  }
+  nav {
+    display: none;
+  }
+}
+/* || MEDIA QUERY XL || */
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: rgb(255, 127, 155);
+    background-image: radial-gradient( rgb(255, 127, 155), #fff);
+  }
+  nav {
+    display: none;
+  }
+}
+/* || MEDIA QUERY MOBILE DEVICE LANDSCAPE || */
+
+@media screen and (max-height: 425) and (min-aspect-ratio: 7/4) {
+  body {
+    background-color: dodgerblue;
+    background-image: radial-gradient( dodgerblue, #fff);
+  }
+  nav {
+    display: none;
+  }
 }
